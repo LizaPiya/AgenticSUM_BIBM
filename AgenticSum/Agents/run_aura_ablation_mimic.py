@@ -114,7 +114,7 @@ df = pd.read_csv("../Dataset/sample_data_100.csv").head(100).reset_index(drop=Tr
 print(f"Running AURA ablation on {len(df)} MIMIC documents\n")
 
 # ── Output ────────────────────────────────────────────────────────────────────
-output_dir = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+output_dir = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 os.makedirs(output_dir, exist_ok=True)
 os.makedirs(f"{output_dir}/checkpoints_aura_mimic", exist_ok=True)
 

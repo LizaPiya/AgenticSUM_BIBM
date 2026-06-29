@@ -4,8 +4,8 @@ import torch
 
 from Evaluation import evaluate_summaries
 
-RESULTS_CSV  = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/agenticsum_results_mimic.csv"
-OUTPUT_CSV   = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/eval_metrics_mimic.csv"
+RESULTS_CSV  = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/agenticsum_results_mimic.csv"
+OUTPUT_CSV   = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/eval_metrics_mimic.csv"
 
 print("=" * 60)
 print("AgenticSum Evaluation — MIMIC-IV")

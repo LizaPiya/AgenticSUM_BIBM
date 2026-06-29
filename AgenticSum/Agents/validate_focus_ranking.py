@@ -33,7 +33,7 @@ MAX_LENGTH  = 2048       # covers ~95% of MIMIC notes
 RETENTION   = 0.3        # matches pipeline default
 MODEL_NAME  = "meta-llama/Llama-3.2-3B-Instruct"
 DATA_PATH   = "../Dataset/mimic-iv-bhc.csv"
-OUTPUT_FILE = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/focus_validation_300.txt"
+OUTPUT_FILE = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/focus_validation_300.txt"
 
 # ── Auth + GPU ────────────────────────────────────────────────────────────────
 HF_TOKEN = os.environ.get("HUGGINGFACE_HUB_TOKEN")

@@ -124,7 +124,7 @@ print(f"Loaded {len(df)} notes from {data_path}\n")
 # ======================================================
 # Output setup
 # ======================================================
-output_dir = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+output_dir = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 os.makedirs(output_dir, exist_ok=True)
 os.makedirs(f"{output_dir}/checkpoints_soap", exist_ok=True)
 

@@ -3,8 +3,8 @@ import pandas as pd
 
 from Evaluation import evaluate_summaries
 
-RESULTS_CSV = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/agenticsum_results_soap.csv"
-OUTPUT_CSV  = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/eval_metrics_soap.csv"
+RESULTS_CSV = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/agenticsum_results_soap.csv"
+OUTPUT_CSV  = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/eval_metrics_soap.csv"
 
 print("=" * 60)
 print("AgenticSum Evaluation — SOAP")

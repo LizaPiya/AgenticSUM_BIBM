@@ -10,7 +10,7 @@ import os
 sys.path.insert(0, os.path.dirname(__file__))
 from Evaluation import compute_bert_score_batched, clean_text
 
-CSV_PATH = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/mistral7b_agenticsum/mistral7b_mimic_summaries.csv"
+CSV_PATH = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/mistral7b_agenticsum/mistral7b_mimic_summaries.csv"
 
 df = pd.read_csv(CSV_PATH)
 print(f"Loaded {len(df)} samples")

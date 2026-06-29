@@ -113,7 +113,7 @@ DATASETS = {
 }
 N_DOCS = 15  # Small sample — sufficient for sensitivity analysis
 
-output_dir = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+output_dir = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 os.makedirs(output_dir, exist_ok=True)
 
 

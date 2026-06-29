@@ -5,17 +5,17 @@
 #SBATCH --mem=64G
 #SBATCH -t 10:00:00
 #SBATCH -J llama70b_baseline
-#SBATCH -o /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/llama70b_%j.log
-#SBATCH -e /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/llama70b_%j.err
+#SBATCH -o /home/user/MLHC_AgenticSUM/outputs/agenticsum/llama70b_%j.log
+#SBATCH -e /home/user/MLHC_AgenticSUM/outputs/agenticsum/llama70b_%j.err
 
 # -------------------------------
 # Hugging Face cache + auth
 # -------------------------------
-export HF_HOME=/home/lizapiya/.cache/huggingface
+export HF_HOME=/home/user/.cache/huggingface
 export HUGGINGFACE_HUB_TOKEN=$(cat $HF_HOME/token)
 export HF_HUB_DISABLE_TELEMETRY=1
 
-mkdir -p /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/llama70b_baseline
+mkdir -p /home/user/MLHC_AgenticSUM/outputs/agenticsum/llama70b_baseline
 
 # ===============================
 # Environment (SBATCH-SAFE)
@@ -26,6 +26,6 @@ conda activate AgenticSUM_CHIL
 # ===============================
 # Run Llama-3.1-70B single-pass baseline
 # ===============================
-cd /home/lizapiya/MLHC_AgenticSUM/AgenticSum/Baselines
+cd /home/user/MLHC_AgenticSUM/AgenticSum/Baselines
 
 python run_llama70b_baseline.py

@@ -38,8 +38,8 @@ model = AutoModelForCausalLM.from_pretrained(
 model.eval()
 print("Model loaded\n")
 
-RESULTS_CSV = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/agenticsum_results_mimic.csv"
-OUTPUT_CSV  = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/judge_scores_mimic_8b.csv"
+RESULTS_CSV = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/agenticsum_results_mimic.csv"
+OUTPUT_CSV  = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/judge_scores_mimic_8b.csv"
 
 llm_hallucination_evaluation(
     model=model,

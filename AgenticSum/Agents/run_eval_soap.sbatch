@@ -6,17 +6,17 @@
 #SBATCH --mem=64G
 #SBATCH -t 1-00:00:00
 #SBATCH -J eval_soap
-#SBATCH -o /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/eval_soap_%j.log
-#SBATCH -e /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/eval_soap_%j.err
+#SBATCH -o /home/user/MLHC_AgenticSUM/outputs/agenticsum/eval_soap_%j.log
+#SBATCH -e /home/user/MLHC_AgenticSUM/outputs/agenticsum/eval_soap_%j.err
 
-export HF_HOME=/home/lizapiya/.cache/huggingface
+export HF_HOME=/home/user/.cache/huggingface
 export HF_HUB_DISABLE_TELEMETRY=1
 
-mkdir -p /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum
+mkdir -p /home/user/MLHC_AgenticSUM/outputs/agenticsum
 
 source $(conda info --base)/etc/profile.d/conda.sh
 conda activate AgenticSUM_CHIL
 
-cd /home/lizapiya/MLHC_AgenticSUM/AgenticSum/Agents
+cd /home/user/MLHC_AgenticSUM/AgenticSum/Agents
 
 python run_eval_soap.py

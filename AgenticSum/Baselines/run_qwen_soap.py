@@ -36,7 +36,7 @@ MODEL_TAG  = f"qwen2.5_{args.model_size}"
 HF_TOKEN = os.environ.get("HUGGINGFACE_HUB_TOKEN")
 
 DATA_PATH   = "../Dataset/df_soap_mimic.csv"
-OUTPUT_DIR  = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+OUTPUT_DIR  = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 OUTPUT_PATH = f"{OUTPUT_DIR}/{MODEL_TAG}_soap_summaries.csv"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)

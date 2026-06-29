@@ -1,7 +1,7 @@
 import pandas as pd
 from Evaluation import evaluate_summaries
 
-OUTPUT_DIR  = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+OUTPUT_DIR  = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 RESULTS_CSV = f"{OUTPUT_DIR}/ablation_results_mimic.csv"
 
 print("=" * 60)

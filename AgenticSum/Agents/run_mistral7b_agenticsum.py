@@ -123,7 +123,7 @@ print("✅ All agents initialized\n")
 # ======================================================
 # Output setup
 # ======================================================
-OUTPUT_DIR = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/mistral7b_agenticsum"
+OUTPUT_DIR = "/home/user/MLHC_AgenticSUM/outputs/agenticsum/mistral7b_agenticsum"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(f"{OUTPUT_DIR}/checkpoints", exist_ok=True)
 

@@ -92,7 +92,7 @@ df = pd.read_csv(data_path).head(100).reset_index(drop=True)
 print(f"Running ablation on {len(df)} MIMIC documents\n")
 
 # ── Output ────────────────────────────────────────────────────────────────────
-output_dir = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+output_dir = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 os.makedirs(output_dir, exist_ok=True)
 os.makedirs(f"{output_dir}/checkpoints_ablation_mimic", exist_ok=True)
 

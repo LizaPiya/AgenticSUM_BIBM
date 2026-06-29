@@ -148,7 +148,7 @@ print()
 # ======================================================
 # Output setup
 # ======================================================
-output_dir = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+output_dir = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 os.makedirs(output_dir, exist_ok=True)
 
 ablation_output_path = f"{output_dir}/ablation_20docs.csv"

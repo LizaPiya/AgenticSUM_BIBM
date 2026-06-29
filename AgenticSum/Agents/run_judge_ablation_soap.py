@@ -29,7 +29,7 @@ model = AutoModelForCausalLM.from_pretrained(
 model.eval()
 print("Model loaded\n")
 
-OUTPUT_DIR  = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+OUTPUT_DIR  = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 RESULTS_CSV = f"{OUTPUT_DIR}/ablation_results_soap.csv"
 
 df = pd.read_csv(RESULTS_CSV)

@@ -141,7 +141,7 @@ mimic_df = mimic_df.head(N_DOCS).reset_index(drop=True)
 print(f"FOCUS ABLATION — MIMIC — {N_DOCS} documents")
 print("=" * 80)
 
-output_dir = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+output_dir = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 os.makedirs(output_dir, exist_ok=True)
 
 conditions = [

@@ -27,6 +27,6 @@ conda activate agentic
 # ===============================
 # Run AgenticSum
 # ===============================
-cd /home/lizapiya/MLHC_AgenticSUM/AgenticSum/Agents
+cd /home/user/MLHC_AgenticSUM/AgenticSum/Agents
 
 python run_agenticsum.py

@@ -5,13 +5,13 @@
 #SBATCH --mem=64G
 #SBATCH -t 12:00:00
 #SBATCH -J mistral7b_soap
-#SBATCH -o /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/mistral7b_soap_%j.log
-#SBATCH -e /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/mistral7b_soap_%j.err
+#SBATCH -o /home/user/MLHC_AgenticSUM/outputs/agenticsum/mistral7b_soap_%j.log
+#SBATCH -e /home/user/MLHC_AgenticSUM/outputs/agenticsum/mistral7b_soap_%j.err
 
 # -------------------------------
 # Hugging Face cache + auth
 # -------------------------------
-export HF_HOME=/home/lizapiya/.cache/huggingface
+export HF_HOME=/home/user/.cache/huggingface
 export HUGGINGFACE_HUB_TOKEN=$(cat $HF_HOME/token)
 export HF_HUB_DISABLE_TELEMETRY=1
 
@@ -27,6 +27,6 @@ conda activate AgenticSUM_CHIL
 # ===============================
 # Run AgenticSum Mistral-7B — SOAP only
 # ===============================
-cd /home/lizapiya/MLHC_AgenticSUM/AgenticSum/Agents
+cd /home/user/MLHC_AgenticSUM/AgenticSum/Agents
 
 python run_mistral7b_agenticsum_soap.py

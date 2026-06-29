@@ -29,8 +29,8 @@ args = parser.parse_args()
 MODEL_TAG  = f"qwen2.5_{args.model_size}"
 DATASET    = args.dataset
 
-INPUT_CSV  = f"/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/{MODEL_TAG}_{DATASET}_summaries.csv"
-OUTPUT_DIR = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+INPUT_CSV  = f"/home/user/MLHC_AgenticSUM/outputs/agenticsum/{MODEL_TAG}_{DATASET}_summaries.csv"
+OUTPUT_DIR = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 OUTPUT_CSV = f"{OUTPUT_DIR}/{MODEL_TAG}_{DATASET}_judge_results.csv"
 
 JUDGE_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"

@@ -114,7 +114,7 @@ df = pd.read_csv("../Dataset/df_soap_mimic.csv").head(100).reset_index(drop=True
 print(f"Running AURA ablation on {len(df)} SOAP documents\n")
 
 # ── Output ────────────────────────────────────────────────────────────────────
-output_dir = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
+output_dir = "/home/user/MLHC_AgenticSUM/outputs/agenticsum"
 os.makedirs(output_dir, exist_ok=True)
 os.makedirs(f"{output_dir}/checkpoints_aura_soap", exist_ok=True)
 
