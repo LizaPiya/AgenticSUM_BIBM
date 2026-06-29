@@ -19,6 +19,6 @@ conda activate AgenticSUM_CHIL
 # ===============================
 # Run ablation
 # ===============================
-cd /home/lizapiya/MLHC_AgenticSUM/MLHC/Agents_MLHC
+cd /home/lizapiya/MLHC_AgenticSUM/AgenticSum/Agents
 
 python run_ablation.py

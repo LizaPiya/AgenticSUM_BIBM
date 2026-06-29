@@ -1,32 +1,31 @@
 #!/bin/bash
-#SBATCH -p gpu-v100
+#SBATCH -p hl_gpu
 #SBATCH --gpus=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G
 #SBATCH -t 10:00:00
-#SBATCH -J agenticsum_test
-#SBATCH -o /lustre/hl/users/4283/outputs/agenticsum/logs/run_%j.log
-#SBATCH -e /lustre/hl/users/4283/outputs/agenticsum/logs/run_%j.err
+#SBATCH -J llama70b_baseline
+#SBATCH -o /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/llama70b_%j.log
+#SBATCH -e /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/llama70b_%j.err
 
 # -------------------------------
 # Hugging Face cache + auth
 # -------------------------------
-export HF_HOME=/lustre/hl/users/4283/.cache/huggingface
+export HF_HOME=/home/lizapiya/.cache/huggingface
 export HUGGINGFACE_HUB_TOKEN=$(cat $HF_HOME/token)
 export HF_HUB_DISABLE_TELEMETRY=1
 
-mkdir -p $HF_HOME
+mkdir -p /home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum/llama70b_baseline
 
 # ===============================
 # Environment (SBATCH-SAFE)
 # ===============================
-vpkg_devrequire anaconda/2024.02:python3
 source $(conda info --base)/etc/profile.d/conda.sh
-conda activate agentic
+conda activate AgenticSUM_CHIL
 
 # ===============================
-# Run AgenticSum
+# Run Llama-3.1-70B single-pass baseline
 # ===============================
-cd /lustre/hl/users/4283/agentic_paper/MLHC/Agents_MLHC
+cd /home/lizapiya/MLHC_AgenticSUM/AgenticSum/Baselines
 
-python run_agenticsum.py
+python run_llama70b_baseline.py

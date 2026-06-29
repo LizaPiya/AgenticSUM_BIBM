@@ -83,9 +83,9 @@ print("Model loaded\n")
 # Paths
 # ======================================================
 output_dir        = "/home/lizapiya/MLHC_AgenticSUM/outputs/agenticsum"
-aura_mimic_csv    = f"{output_dir}/aura_ablation_50docs_MIMIC.csv"
-aura_soap_csv     = f"{output_dir}/aura_ablation_50docs_SOAP.csv"
-judge_output_path = f"{output_dir}/llm_judge_aura_50docs_scores.csv"
+aura_mimic_csv    = f"{output_dir}/aura_ablation_100docs_MIMIC.csv"
+aura_soap_csv     = f"{output_dir}/aura_ablation_100docs_SOAP.csv"
+judge_output_path = f"{output_dir}/llm_judge_aura_100docs_scores.csv"
 
 os.makedirs(output_dir, exist_ok=True)
 

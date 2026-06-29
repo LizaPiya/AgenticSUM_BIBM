@@ -22,7 +22,7 @@ class HallucinationDetectorAgent:
         semantic_judge,
         device: str = "cuda",
         epsilon: float = 1e-8,
-        aura_threshold: float = 0.4,
+        aura_threshold: float = 0.42,
     ):
         self.model = model.eval()
         self.tokenizer = tokenizer
